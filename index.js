@@ -1,8 +1,7 @@
 const { prompt } = require("inquirer");
-const db = require("./db");
+const db = require("./database");
 require("console.table");
 
-init();
 //Using inquirer to prompt questions
 async function showPrompts() {
   const { choice } = await prompt([
